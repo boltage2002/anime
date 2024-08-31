@@ -87,7 +87,7 @@ position: relative;
 #cursor{
     height: 20px;
     width: 20px;
-    background-color: rgb(141, 0, 0);
+    background-color: rgba(176, 4, 4, 0.88);
     border-radius: 50%;
     position:fixed;
     z-index: 99;
@@ -95,8 +95,62 @@ position: relative;
 #cursor-blur{
     height: 300px;
     width: 300px;
-    background-color: rgba(169, 3, 3, 0.235);
+    background-color: rgba(158, 4, 4, 0.451);
     border-radius: 50%;
     position:fixed;
    filter: blur(30px);
+}
+#scroller{
+    
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller ::-webkit-scrollbar{
+    display: none;
+}
+#scroller-1{
+    display: inline-block;
+    white-space: nowrap;
+
+}
+#scroller-1{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+#scroller h4{
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 1000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 1px;
+    -webkit-text-stroke: 1px rgb(246, 4, 4);
+    text-transform: uppercase;
+    color: transparent;
+
+
+}
+
+#scroller h4:hover{
+    color: rgb(243, 3, 3);
+  
+}
+
+
+@keyframes scroll {
+    from{
+        transform: translatex(0);
+
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
 }
