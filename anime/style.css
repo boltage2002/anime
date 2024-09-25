@@ -80,7 +80,7 @@ position: relative;
 
 }
 #page2 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     z-index: 10;
 }
@@ -187,7 +187,7 @@ position: relative;
     line-height: 26px;
 }
 #cards{
-    background-color: brown;
+   
     height: 60vh;
     display: flex;
     align-items: center;
@@ -196,8 +196,43 @@ position: relative;
 
 }
 .card{
-    height: 68%;
+    height: 65%;
     width: 20%;
-    background-color: blue;
+  
     border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
 }
+#card1{
+    background-image: url(images\ \(1\).jpeg);
+}
+#card2{
+    background-image: url(download\ \(5\).jpeg);
+}
+#card3{
+    background-image: url(download\ \(6\).jpeg);
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(165, 30, 30, 0.607);
+    padding-top: 160px;
+    padding: 30px;
+  
+}
+.overlay h4{
+    color: rgb(255, 255, 255);
+    font-size: 29px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+.overlay p{
+    color: rgb(255, 250, 250);
+    font-size: 16px;
+}
+
+ 
