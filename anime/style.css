@@ -130,10 +130,11 @@ position: relative;
     font-size: 80px;
     font-weight: 1000;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-right: 1px;
-    -webkit-text-stroke: 1px rgb(246, 4, 4);
+    margin-right: 10px;
+    -webkit-text-stroke: 2px rgb(246, 4, 4);
     text-transform: uppercase;
     color: transparent;
+    transition: all linear 0.4;
 
 
 }
@@ -153,4 +154,50 @@ position: relative;
         transform: translateX(-100%);
     }
     
+}
+#about-us{
+    height: 40vh;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+#about-us img{
+    height: 170px;
+    width: 190px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+}
+#aboutus-in{
+    width: 40%;
+    text-align: center;
+
+}
+#aboutus-in h3{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+#aboutus-in p{
+    font-size: 15px;
+    line-height: 26px;
+}
+#cards{
+    background-color: brown;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+}
+.card{
+    height: 68%;
+    width: 20%;
+    background-color: blue;
+    border-radius: 30px;
 }
